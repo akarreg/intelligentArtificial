@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(208, 206, 240) 0%,
+    rgba(205, 197, 165, 1) 27%,
+    rgba(155, 210, 221, 1) 100%
+  );
+}
+
+form {
+  display: block;
+  text-align: center;
+}
+#first {
+  padding: 150px;
+}
+#result {
+  padding: 150px;
+  text-align: center;
+  background-color: rgba(237, 191, 191, 0.336);
+  box-shadow: 15px 15px 5px #5e4d17;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#text {
+  width: 400px;
+  height: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  background-color: rgb(208, 237, 237);
+}
+#search {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+
+  background-color: rgb(219, 238, 238);
+}
+p {
+  margin-top: 70px;
+  opacity: 0.8;
+  font-size: 20px;
+}
+strong {
+  text-decoration: underline;
+}
