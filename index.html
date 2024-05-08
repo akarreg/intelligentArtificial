@@ -7,23 +7,36 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div id="first">
-      <div id="second">
-        <div id="third">
-          <form>
-            <input id="text" type="text" placeholder="Enter ingredient" />
+    <header>
+      <div>World Recipes</div>
+    </header>
+    <div id="container">
+      <form>
+        <label for="name"> Enter ingredient: </label>
+        <input
+          id="name"
+          type="text"
+          placeholder="e.g. flour,yeast,sunflower seeds ......"
+          required
+          autocomplete="off"
+          autofocus
+        />
 
-            <input type="submit" id="search" />
-          </form>
+        <input type="submit" id="search" />
+      </form>
 
-          <div id="result"></div>
-        </div>
-      </div>
-      <p>
-        This Ai project was coded by<strong> Ama Akarregi</strong> and
-        <strong>is open-sourced on GitHub</strong>
-        and is hosted on <strong>Netlify .</strong>
-      </p>
+      <div id="result"></div>
+    
+
+ <footer>
+      
+        This Ai project was coded by<a> Ama Akarregi</a> and
+        <a href="https://github.com/akarreg/intelligentArtificial">
+          open-sourced on GitHub</a
+        >
+        and is hosted on <a href="https://eskatza.netlify.app/">Netlify .</a>
+      </a>
+    </footer>
     </div>
 
     <script src="src/index.js"></script>
