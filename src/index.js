@@ -1,8 +1,12 @@
 function ingredient(event) {
   event.preventDefault();
-
-  let recipe = document.querySelector("#result");
-  recipe.innerHTML = "Searching for the best recipe ...";
+  new Typewriter("#result", {
+    strings: "Searching for the best recipe....",
+    autoStart: true,
+    delay: 400,
+    cursor: "",
+  });
 }
+
 let pressButton = document.querySelector("#search");
 pressButton.addEventListener("click", ingredient);
