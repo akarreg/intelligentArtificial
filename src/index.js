@@ -17,6 +17,10 @@ function ingredient(event) {
     "You have the best recipes in the world ,you are an expert in the classic culinary world.";
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let recipeElement = document.querySelector("#result");
+  recipeElement.classList.remove("hidden");
+
   console.log("Searching for the best recipe.....");
 
   axios.get(apiUrl).then(displayRecipe);
@@ -24,3 +28,5 @@ function ingredient(event) {
 
 let pressButton = document.querySelector("#search");
 pressButton.addEventListener("click", ingredient);
+
+console.log("Searching for the best recipe.....");

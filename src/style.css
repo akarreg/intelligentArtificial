@@ -23,10 +23,21 @@ header {
   padding-bottom: 30px;
   background-color: rgb(245, 230, 216);
 }
+#userInput {
+  margin-right: 80px;
+  background-color: rgba(242, 220, 220, 0.336);
+  box-shadow: 15px 15px 5px #5e4d17;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: rgb(232, 58, 58);
+  margin-bottom: 100px;
+}
+
 form {
   margin-top: 50px;
   margin-left: 85px;
   padding: 20px;
+  border-color: black;
 }
 #info {
   color: black;
@@ -44,10 +55,11 @@ form {
   width: 12%;
   height: 35px;
   border-radius: 20px;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(233, 238, 238);
+  cursor: pointer;
 }
 
-#result {
+.result {
   max-width: 600;
   padding: 150px;
   margin-top: 30px;
@@ -60,6 +72,9 @@ form {
   border-style: dotted;
   border-color: rgb(232, 58, 58);
   margin-bottom: 100px;
+}
+.hidden {
+  display: none;
 }
 
 footer {
