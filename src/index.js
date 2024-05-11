@@ -21,7 +21,9 @@ function ingredient(event) {
   let recipeElement = document.querySelector("#result");
   recipeElement.classList.remove("hidden");
 
-  console.log("Searching for the best recipe.....");
+  recipeElement.innerHTML = `<div class="blink">
+       Searching for the best recipe with ${userProduct.value} for you..;
+    </div>`;
 
   axios.get(apiUrl).then(displayRecipe);
 }
