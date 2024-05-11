@@ -11,7 +11,7 @@ function ingredient(event) {
   event.preventDefault();
   let userProduct = document.querySelector("#ingredient");
   let apiKey = "bc0c992ff01fe3156bt9ead9dob31418";
-  let prompt = `  Generated a recipe  includng the ${userProduct.value} as a ingredient . Remember the ingredients must be in grams  `;
+  let prompt = `  Generated a recipe  includng the ${userProduct.value} as a ingredient . Remember the ingredients must be in grams. be have and be simple  `;
 
   let context =
     "You have the best recipes in the world ,you are an expert in the classic culinary world.";
@@ -30,5 +30,3 @@ function ingredient(event) {
 
 let pressButton = document.querySelector("#search");
 pressButton.addEventListener("click", ingredient);
-
-console.log("Searching for the best recipe.....");
